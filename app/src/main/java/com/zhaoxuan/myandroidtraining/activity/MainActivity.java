@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.skeleton_screen).setOnClickListener(this);
         findViewById(R.id.view_replacer).setOnClickListener(this);
+        findViewById(R.id.constraint_layout).setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (v.getId() == R.id.view_replacer) {
             Intent intent = new Intent(this, ViewReplacerUsingActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.constraint_layout) {
+            Intent intent = new Intent(this, ConstraintLayoutUsingActivity.class);
             startActivity(intent);
         }
     }

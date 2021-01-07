@@ -21,6 +21,8 @@
         <activity android:name=".activity.SkeletonRecyclerViewUsingActivity" />
         <activity android:name=".activity.SkeletonViewUsingActivity" />
         <activity android:name=".activity.ViewReplacerUsingActivity" />
+        <activity android:name=".activity.ConstraintLayoutUsingActivity" />
+        <activity android:name=".activity.ConstraintLayoutMultiViewsCenteredUsingActivity" />
     </application>
 
 </manifest>
