@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="知识"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/tv_story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_banner" />
+
+    <TextView
+        android:id="@+id/tv_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="故事"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/tv_service"
+        app:layout_constraintStart_toEndOf="@id/tv_knowledge"
+        app:layout_constraintTop_toTopOf="@id/tv_knowledge" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="服务"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/tv_topic"
+        app:layout_constraintStart_toEndOf="@id/tv_story"
+        app:layout_constraintTop_toTopOf="@id/tv_knowledge" />
+
+    <TextView
+        android:id="@+id/tv_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="话题"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_service"
+        app:layout_constraintTop_toTopOf="@id/tv_knowledge" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

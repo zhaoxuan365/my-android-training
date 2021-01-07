@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAndroidTraining">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.ShimmerSkeletonUsingActivity" />
+        <activity android:name=".activity.SkeletonLayoutUsingActivity" />
+        <activity android:name=".activity.SkeletonRecyclerViewUsingActivity" />
+        <activity android:name=".activity.SkeletonViewUsingActivity" />
+        <activity android:name=".activity.ViewReplacerUsingActivity" />
     </application>
 
 </manifest>
