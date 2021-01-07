@@ -1,2 +1,3 @@
+include ':shimmerskeleton'
 include ':app'
 rootProject.name = "My Android Training"

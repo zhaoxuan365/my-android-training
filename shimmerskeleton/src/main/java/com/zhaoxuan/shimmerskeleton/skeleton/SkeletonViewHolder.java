@@ -1,4 +1,4 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton;
+package com.zhaoxuan.shimmerskeleton.skeleton;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.zhaoxuan.myandroidtraining.R;
+import com.zhaoxuan.shimmerskeleton.R;
 
 /**
  * author : zhaoxuan

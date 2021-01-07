@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.zhaoxuan.myandroidtraining.R;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.ViewReplacer;
+import com.zhaoxuan.shimmerskeleton.ViewReplacer;
 
 
 /**

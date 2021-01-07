@@ -8,8 +8,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.zhaoxuan.myandroidtraining.R;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton.SkeletonUtils;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton.SkeletonView;
+import com.zhaoxuan.shimmerskeleton.skeleton.SkeletonUtils;
+import com.zhaoxuan.shimmerskeleton.skeleton.SkeletonView;
 
 
 /**

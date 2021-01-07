@@ -1,4 +1,4 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.shimmer;
+package com.zhaoxuan.shimmerskeleton.shimmer;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -12,8 +12,7 @@ import androidx.annotation.FloatRange;
 import androidx.annotation.IntDef;
 import androidx.annotation.Px;
 
-
-import com.zhaoxuan.myandroidtraining.R;
+import com.zhaoxuan.shimmerskeleton.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

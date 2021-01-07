@@ -1,4 +1,4 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.shimmer;
+package com.zhaoxuan.shimmerskeleton.shimmer;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.zhaoxuan.myandroidtraining.R;
+import com.zhaoxuan.shimmerskeleton.R;
 
 
 /**

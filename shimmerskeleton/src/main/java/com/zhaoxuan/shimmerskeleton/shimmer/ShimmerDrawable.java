@@ -1,4 +1,4 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.shimmer;
+package com.zhaoxuan.shimmerskeleton.shimmer;
 
 import android.animation.ValueAnimator;
 import android.graphics.Canvas;

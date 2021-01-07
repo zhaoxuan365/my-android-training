@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.zhaoxuan.myandroidtraining.R;
 import com.zhaoxuan.myandroidtraining.adapter.NewsAdapter;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton.SkeletonRecyclerView;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton.SkeletonUtils;
+import com.zhaoxuan.shimmerskeleton.skeleton.SkeletonRecyclerView;
+import com.zhaoxuan.shimmerskeleton.skeleton.SkeletonUtils;
 
 /**
  * author : zhaoxuan

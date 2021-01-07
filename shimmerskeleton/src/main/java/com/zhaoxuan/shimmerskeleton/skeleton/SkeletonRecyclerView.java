@@ -1,10 +1,10 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton;
+package com.zhaoxuan.shimmerskeleton.skeleton;
 
 import androidx.annotation.ArrayRes;
 import androidx.annotation.LayoutRes;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.shimmer.Shimmer;
+import com.zhaoxuan.shimmerskeleton.shimmer.Shimmer;
 
 
 /**

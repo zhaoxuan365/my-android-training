@@ -1,4 +1,4 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton;
+package com.zhaoxuan.shimmerskeleton.skeleton;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,10 +7,10 @@ import android.view.ViewParent;
 
 import androidx.annotation.LayoutRes;
 
-import com.zhaoxuan.myandroidtraining.R;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.ViewReplacer;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.shimmer.Shimmer;
-import com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.shimmer.ShimmerFrameLayout;
+import com.zhaoxuan.shimmerskeleton.R;
+import com.zhaoxuan.shimmerskeleton.ViewReplacer;
+import com.zhaoxuan.shimmerskeleton.shimmer.Shimmer;
+import com.zhaoxuan.shimmerskeleton.shimmer.ShimmerFrameLayout;
 
 
 /**

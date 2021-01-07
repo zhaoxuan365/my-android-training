@@ -1,4 +1,4 @@
-package com.zhaoxuan.myandroidtraining.widget.shimmerskeleton.skeleton;
+package com.zhaoxuan.shimmerskeleton.skeleton;
 
 import android.view.View;
 
