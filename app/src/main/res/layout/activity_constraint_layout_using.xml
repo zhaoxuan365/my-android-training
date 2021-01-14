@@ -10,7 +10,7 @@
         android:id="@+id/multi_views_centered"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_pressed_bg"
+        android:background="@drawable/pressed_ripple_bg"
         android:gravity="center"
         android:paddingVertical="16dp"
         android:text="ConstraintLayout实现多个控件居中"

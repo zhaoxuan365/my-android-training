@@ -21,15 +21,10 @@ public class RippleEffectActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_ripple_effect);
-
-        findViewById(R.id.bordered_ripple).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.bordered_ripple) {
-            Intent intent = new Intent(this, RippleEffectBorderedActivity.class);
-            startActivity(intent);
-        }
+
     }
 }

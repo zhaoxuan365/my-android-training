@@ -1,21 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/bordered_ripple"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/selector_pressed_bg"
-        android:gravity="center"
-        android:paddingVertical="16dp"
-        android:text="系统默认 有边界水波纹效果"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--        android:clickable="true"
+            android:focusable="true"-->
+        <TextView
+            android:id="@+id/bordered_ripple"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹效果\n系统默认"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bordered_ripple2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="有边界水波纹效果\n系统默认\n通过foreground属性实现"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bordered_ripple" />
+
+        <TextView
+            android:id="@+id/borderless_ripple"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="无边界水波纹效果\n系统默认"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bordered_ripple2" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="无边界水波纹\n修改ripple效果颜色"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/borderless_ripple" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹\n修改ripple效果的颜色\n包含背景色"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color3"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable3"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹\n修改ripple效果的颜色\n用shape作背景"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color2" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable4"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹\n修改ripple效果颜色\n用图片做背景"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color3" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color5"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable6"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹\n修改ripple效果的颜色\n含背景色但不显示(ripple with mask)"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color4" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color6"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable7"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹\n修改ripple效果的颜色\n用shape作背景但不显示(ripple with mask)"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color5" />
+
+        <TextView
+            android:id="@+id/ripple_with_custom_color7"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_drawable8"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="有边界水波纹\n修改ripple效果颜色\n用图片做背景但不显示(ripple with mask)"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color6" />
+
+        <TextView
+            android:id="@+id/ripple_with_selector"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="ripple with selector"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_custom_color7" />
+
+        <TextView
+            android:id="@+id/ripple_with_selector2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ripple_selector2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="ripple with selector with background"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ripple_with_selector" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
