@@ -4,4 +4,6 @@
     <item
         android:id="@android:id/mask"
         android:drawable="@drawable/ic_android" />
+
+    <item android:drawable="@drawable/ic_good_job" />
 </ripple>

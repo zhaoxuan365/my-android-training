@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     android:color="@color/design_default_color_primary">
+    <!--Mask的内容并不会被绘制到屏幕上，它的作用是限定Ripple效果的绘制区域。-->
     <item
         android:id="@android:id/mask"
         android:drawable="@android:color/darker_gray" />

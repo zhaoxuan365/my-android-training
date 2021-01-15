@@ -16,5 +16,5 @@
 
     <item
         android:id="@android:id/mask"
-        android:drawable="@mipmap/ic_launcher" />
+        android:drawable="@drawable/ic_android" />
 </ripple>
