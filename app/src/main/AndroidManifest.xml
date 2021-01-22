@@ -24,6 +24,7 @@
         <activity android:name=".activity.ConstraintLayoutUsingActivity" />
         <activity android:name=".activity.ConstraintLayoutMultiViewsCenteredUsingActivity" />
         <activity android:name=".activity.RippleEffectActivity" />
+        <activity android:name=".activity.RecyclerViewNoPerceptionLoadMoreActivity" />
     </application>
 
 </manifest>
