@@ -28,6 +28,7 @@ import java.util.List;
  * true 就是不满一页然后手动调用onLoadMore(refreshlayout)
  * <p>
  * 参考4 https://www.cnblogs.com/baiqiantao/p/6958811.html
+ * 参考5 https://blog.csdn.net/qibin0506/article/details/49716795
  */
 public class NoPerceptionLoadMoreAdapterWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
