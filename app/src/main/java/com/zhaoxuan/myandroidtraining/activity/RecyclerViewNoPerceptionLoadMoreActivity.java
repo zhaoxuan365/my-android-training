@@ -69,16 +69,16 @@ public class RecyclerViewNoPerceptionLoadMoreActivity extends AppCompatActivity 
 
         getData();
 
+        RecyclerView.LayoutManager manager = recyclerView.getLayoutManager();
+
 //        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
 //            @Override
 //            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
 //                super.onScrolled(recyclerView, dx, dy);
 //
-//                RecyclerView.LayoutManager manager = recyclerView.getLayoutManager();
 //                if (manager instanceof LinearLayoutManager) {
-//                    LinearLayoutManager linearLayoutManager = (LinearLayoutManager) manager;
-//                    int itemCount = linearLayoutManager.getItemCount();
-//                    int lastVisibleItemPosition = linearLayoutManager.findLastVisibleItemPosition();
+//                    int itemCount = manager.getItemCount();
+//                    int lastVisibleItemPosition = ((LinearLayoutManager) manager).findLastVisibleItemPosition();
 //                    if (dy == 0) {
 //                        Log.d("zx", "lastVisibleItemPosition-" + lastVisibleItemPosition
 //                                + "---itemCount-" + itemCount + "---preLoadCount-" + preLoadCount);
