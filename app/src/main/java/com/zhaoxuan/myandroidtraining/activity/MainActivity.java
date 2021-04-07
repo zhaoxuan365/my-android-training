@@ -1,7 +1,5 @@
 package com.zhaoxuan.myandroidtraining.activity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.constraint_layout).setOnClickListener(this);
         findViewById(R.id.ripple).setOnClickListener(this);
         findViewById(R.id.recycler_view_no_perception_load_more).setOnClickListener(this);
+        findViewById(R.id.coordinator).setOnClickListener(this);
     }
 
     @Override
@@ -39,14 +38,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.view_replacer) {
             Intent intent = new Intent(this, ViewReplacerUsingActivity.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.constraint_layout) {
+        } else if (v.getId() == R.id.constraint_layout) {
             Intent intent = new Intent(this, ConstraintLayoutUsingActivity.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.ripple) {
+        } else if (v.getId() == R.id.ripple) {
             Intent intent = new Intent(this, RippleEffectActivity.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.recycler_view_no_perception_load_more) {
+        } else if (v.getId() == R.id.recycler_view_no_perception_load_more) {
             Intent intent = new Intent(this, RecyclerViewNoPerceptionLoadMoreActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.coordinator) {
+            Intent intent = new Intent(this, ScrollingActivity.class);
             startActivity(intent);
         }
     }

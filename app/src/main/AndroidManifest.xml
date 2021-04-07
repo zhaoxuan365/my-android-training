@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAndroidTraining">
+        <activity
+            android:name=".activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.MyAndroidTraining.NoActionBar"></activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +29,7 @@
         <activity android:name=".activity.ConstraintLayoutMultiViewsCenteredUsingActivity" />
         <activity android:name=".activity.RippleEffectActivity" />
         <activity android:name=".activity.RecyclerViewNoPerceptionLoadMoreActivity" />
+        <activity android:name=".activity.CoordinatorUsingActivity" />
     </application>
 
 </manifest>
