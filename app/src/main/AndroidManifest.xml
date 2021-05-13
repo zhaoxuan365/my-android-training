@@ -12,7 +12,7 @@
         <activity
             android:name=".activity.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.MyAndroidTraining.NoActionBar"></activity>
+            android:theme="@style/Theme.MyAndroidTraining.NoActionBar"/>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +30,13 @@
         <activity android:name=".activity.RippleEffectActivity" />
         <activity android:name=".activity.RecyclerViewNoPerceptionLoadMoreActivity" />
         <activity android:name=".activity.CoordinatorUsingActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationUsingActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationLinearLayoutVerticalActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationLinearLayoutHorizontalActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationGridVerticalActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationGridHorizontalActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationStaggeredGridVerticalActivity" />
+        <activity android:name=".activity.RecyclerViewItemDecorationStaggeredGridHorizontalActivity" />
     </application>
 
 </manifest>
