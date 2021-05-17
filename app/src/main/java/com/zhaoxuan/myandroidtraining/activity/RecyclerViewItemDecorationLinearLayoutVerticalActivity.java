@@ -54,7 +54,8 @@ public class RecyclerViewItemDecorationLinearLayoutVerticalActivity extends AppC
 //        dividerVertical.setDrawable(Objects.requireNonNull(ContextCompat.getDrawable(this, R.drawable.divider_vertical)));
 
         // 自定义分割线 设置颜色和分割线高度
-        LinearItemDivider dividerVertical = new LinearItemDivider(this, LinearLayoutManager.VERTICAL);
+        LinearItemDivider dividerVertical = new LinearItemDivider(this,
+                LinearLayoutManager.VERTICAL);
         dividerVertical.setParam(Color.TRANSPARENT,
                 16,
                 16,

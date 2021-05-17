@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.zhaoxuan.myandroidtraining.R;
-import com.zhaoxuan.myandroidtraining.widget.GridItemDividerTransparentVertical;
+import com.zhaoxuan.myandroidtraining.widget.GridItemDividerTransparent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +42,10 @@ public class RecyclerViewItemDecorationGridVerticalActivity extends AppCompatAct
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(gridLayoutManager);
 
-        GridItemDividerTransparentVertical itemDivider =
-                new GridItemDividerTransparentVertical(this,16, true);
+//        GridItemDividerTransparentVertical itemDivider =
+//                new GridItemDividerTransparentVertical(this,16, true);
+        GridItemDividerTransparent itemDivider = new GridItemDividerTransparent(this,
+                16, true);
         recyclerView.addItemDecoration(itemDivider);
 
         List<String> list = new ArrayList<>();

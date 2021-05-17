@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.zhaoxuan.myandroidtraining.R;
+import com.zhaoxuan.myandroidtraining.widget.GridItemDividerTransparent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,13 +42,17 @@ public class RecyclerViewItemDecorationStaggeredGridHorizontalActivity extends A
                 = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(gridLayoutManager);
 
-//        GridItemDividerVertical itemDivider = new GridItemDividerVertical(
-//                DensityUtils.dp2px(this, 16), false);
-//        recyclerView.addItemDecoration(itemDivider);
+        GridItemDividerTransparent itemDivider =
+                new GridItemDividerTransparent(this, 16, true);
+        recyclerView.addItemDecoration(itemDivider);
 
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 15; i++) {
-            list.add("我是条目" + i);
+            if (i % 2 == 1) { // 奇数
+                list.add("我是条目" + i);
+            } else { // 偶数
+                list.add("我是条目我是条目我是条目我是条目" + i);
+            }
         }
         MyAdapter adapter = new MyAdapter(list);
         recyclerView.setAdapter(adapter);

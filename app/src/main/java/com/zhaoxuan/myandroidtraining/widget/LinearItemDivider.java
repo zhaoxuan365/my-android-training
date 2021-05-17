@@ -20,7 +20,7 @@ import org.jetbrains.annotations.NotNull;
  * date : 2021/5/10
  * desc : https://github.com/youlookwhat/ByRecyclerView
  * <p>
- * 给LinearLayoutManager(垂直&水平均可)添加分割线，
+ * 给LinearLayoutManager(垂直&水平)添加分割线，
  * 可设置列表顶部和底部不添加分割线的条目个数，
  * 可通过drawable 或 直接指定分割线高度+颜色来添加分割线，
  * 可指定分割线距离条目两边的距离(即分割线的长度或高度可以<=条目的长度或高度)

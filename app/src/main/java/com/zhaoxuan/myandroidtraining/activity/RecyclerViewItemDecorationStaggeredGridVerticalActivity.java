@@ -2,7 +2,6 @@ package com.zhaoxuan.myandroidtraining.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.zhaoxuan.myandroidtraining.R;
-import com.zhaoxuan.myandroidtraining.util.DensityUtils;
-import com.zhaoxuan.myandroidtraining.widget.GridItemDividerTransparentVertical;
-import com.zhaoxuan.myandroidtraining.widget.MyDividerItemDecoration;
+import com.zhaoxuan.myandroidtraining.widget.GridItemDividerTransparent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,8 +42,8 @@ public class RecyclerViewItemDecorationStaggeredGridVerticalActivity extends App
                 = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(gridLayoutManager);
 
-        GridItemDividerTransparentVertical itemDivider =
-                new GridItemDividerTransparentVertical(this, 16, true);
+        GridItemDividerTransparent itemDivider =
+                new GridItemDividerTransparent(this, 16, true);
         recyclerView.addItemDecoration(itemDivider);
 
         List<String> list = new ArrayList<>();
