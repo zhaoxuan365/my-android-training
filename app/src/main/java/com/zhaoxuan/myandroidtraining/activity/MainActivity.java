@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.recycler_view_no_perception_load_more).setOnClickListener(this);
         findViewById(R.id.coordinator).setOnClickListener(this);
         findViewById(R.id.recycler_view_linear_divider).setOnClickListener(this);
+        findViewById(R.id.linear_layout).setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (v.getId() == R.id.recycler_view_linear_divider) {
             Intent intent = new Intent(this, RecyclerViewItemDecorationUsingActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.linear_layout) {
+            Intent intent = new Intent(this, LinearLayoutUsingActivity.class);
             startActivity(intent);
         }
     }

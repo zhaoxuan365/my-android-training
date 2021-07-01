@@ -37,6 +37,10 @@
         <activity android:name=".activity.RecyclerViewItemDecorationGridHorizontalActivity" />
         <activity android:name=".activity.RecyclerViewItemDecorationStaggeredGridVerticalActivity" />
         <activity android:name=".activity.RecyclerViewItemDecorationStaggeredGridHorizontalActivity" />
+        <activity android:name=".activity.LinearLayoutUsingActivity" />
+        <activity android:name=".activity.ConstraintLayoutRadioUsingActivity" />
+        <activity android:name=".activity.ConstraintLayoutMaxMinUsingActivity" />
+        <activity android:name=".activity.ConstraintSetUsingActivity" />
     </application>
 
 </manifest>

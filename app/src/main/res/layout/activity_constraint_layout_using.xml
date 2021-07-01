@@ -18,4 +18,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/radio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/pressed_ripple_bg"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="ConstraintLayout Radio"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multi_views_centered" />
+
+    <TextView
+        android:id="@+id/max_min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/pressed_ripple_bg"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="ConstraintLayout Max and Min"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio" />
+
+    <TextView
+        android:id="@+id/constraint_set"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/pressed_ripple_bg"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="ConstraintSet"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/max_min" />
 </androidx.constraintlayout.widget.ConstraintLayout>
