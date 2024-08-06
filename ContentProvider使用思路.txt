@@ -79,6 +79,7 @@ public class ControlProvider extends ContentProvider {
 }
 
 
+// 应用B中在清单文件设置ContentProvider  
 示例：在AndroidManifest.xml中设置权限
 定义自定义权限
 首先定义自定义权限：
@@ -136,4 +137,73 @@ xml
 </manifest>
 这样，只有声明了相应权限的应用才能访问ContentProvider的数据和功能，从而实现了对数据访问的控制和保护。
 
+
+// 应用A使用权限
+在应用A的AndroidManifest.xml中，声明对自定义权限的使用：
+
+xml
+复制代码
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appa">
+
+    <uses-permission android:name="com.example.appb.permission.READ_CONTROL" />
+    <uses-permission android:name="com.example.appb.permission.WRITE_CONTROL" />
+
+    <application
+        ... >
+        ...
+    </application>
+</manifest>
+
+// 应用A中操作应用B的ContentProvider. 获取当前用户ID：在操作时传递当前用户ID。
+
+java
+复制代码
+public class MainActivity extends AppCompatActivity {
+    private String currentUserId; // 当前登录用户的ID
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // 假设从某个用户管理系统获取当前用户ID
+        currentUserId = getCurrentUserId();
+
+        Switch toggleSwitch = findViewById(R.id.toggle_switch);
+        boolean isControlVisible = queryControlVisibility(currentUserId);
+        toggleSwitch.setChecked(isControlVisible);
+
+        toggleSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            setControlVisibility(currentUserId, isChecked);
+        });
+    }
+
+    private String getCurrentUserId() {
+        // 从用户管理系统或登录信息中获取当前用户ID
+        return "user_id_example"; // 示例
+    }
+
+    private boolean queryControlVisibility(String userId) {
+        Cursor cursor = getContentResolver().query(
+            Uri.parse("content://com.example.appb.controlprovider/control"),
+            null, null, new String[]{userId}, null
+        );
+        if (cursor != null && cursor.moveToFirst()) {
+            boolean isVisible = cursor.getInt(cursor.getColumnIndex("visible")) == 1;
+            cursor.close();
+            return isVisible;
+        }
+        return false;
+    }
+
+    private void setControlVisibility(String userId, boolean isVisible) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("visible", isVisible);
+        getContentResolver().update(
+            Uri.parse("content://com.example.appb.controlprovider/control"),
+            contentValues, null, new String[]{userId}
+        );
+    }
+}
 
